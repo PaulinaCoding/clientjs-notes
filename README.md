@@ -2,7 +2,7 @@
 
 ## The Browser
 
-Browsers are complicated. The Chrome browser has over 5 million lines of code. What does all of that code do? Approximately 800k lines are needed for the v8 JavaScript engine, another 700k lines are needed for the layout engine. That means that approximately 30% of the code needed for the Chrome browser is only for rendering HTML and interpreting/executing JavaScript.
+Browsers are complicated. The Chrome browser has over 5 million lines of code. What does all of that code do? Approximately 800k lines are needed for the V8 JavaScript engine, another 700k lines are needed for the layout engine. That means that approximately 30% of the code needed for the Chrome browser is only for rendering HTML and interpreting/executing JavaScript.
 
 In the same way that the different browsers have different JavaScript implementations, they also have their own layout engine implementations. The browser uses the layout engine to parse HTML and generate a Document Object Model.
 
@@ -15,6 +15,8 @@ There is a comparison fo the differnt layout engines on [Wikipedia](https://en.w
 The Document Object Model is a representation of an HTML, XHTML, or XML document. The text that describes the structure is parsed by the layout engine. It is then converted into the DOM. This means that each element, starting at the root, is represented by an object.
 
 A tree structure is used. Each element represents a node in the tree, which is connected to it's parent and children. HTML is simply text. It is the DOM that represents the state of the document in the browser.
+
+> See the clientjs.pdf for diagrams.
 
 ## DOM + JS
 
