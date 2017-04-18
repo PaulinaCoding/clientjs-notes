@@ -6,7 +6,7 @@ Browsers are complicated. The Chrome browser has over 5 million lines of code. W
 
 In the same way that the different browsers have different JavaScript implementations, they also have their own layout engine implementations. The browser uses the layout engine to parse HTML and generate a Document Object Model.
 
-Firefox has Gecko, Chrome has Blink, Edge has EdgeHTML and Safari has WebKit. Up until 2013 both Safari and Chrome were using WebKit. In 2013 Google forked WebKit and called it Blink. Just like with JavaScript engines we rely on the companies responsible for these browsers to implement their rendering engines to a specification. This is the only chance we have to ensure that our applications look the same across multiple browsers.
+Firefox has Gecko, Chrome has Blink, Edge has EdgeHTML and Safari has WebKit. Up until 2013 both Safari and Chrome were using WebKit. In 2013 Google forked WebKit and called it Blink. Just like with JavaScript engines we rely on the companies responsible for these browsers to implement their rendering engines to a specification. This is the easiest path to ensure that our applications look the same across multiple browsers.
 
 There is a comparison fo the differnt layout engines on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Document_Object_Model)). It's pretty boring, but it does describe the supported features for each version of the DOM in each layout engine.
 
@@ -47,7 +47,7 @@ The window interface represents a window containing a DOM document. With modern 
 console.log(window.innerWidth + 'x' + window.innerHeight)
 ```
 
-The issue with these methods and properties is that they can be supported in only some browsers. The browser developer is the one providing this object so they could potentially put any information they want. It is important to
+The issue with these methods and properties is that they can be supported in only some browsers. The browser developer is the one providing this object so they could potentially put any information they want. When using these features it is important to test across multiple browsers from different vendors.
 
 [MDN Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
@@ -128,7 +128,7 @@ Any of these events seem interesting?
 * scroll
 * select
 
-We have a button, we want to know when it is clicked. When it is clicked we want to execute some JavaScript.
+We have a button and we want to know when it is clicked. When it is clicked we want to execute some JavaScript.
 
 ```javascript
 var button = document.querySelector('button');
