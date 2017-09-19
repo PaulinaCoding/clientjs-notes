@@ -8,7 +8,7 @@ In the same way that the different browsers have different JavaScript implementa
 
 Firefox has Gecko, Chrome has Blink, Edge has EdgeHTML and Safari has WebKit. Up until 2013 both Safari and Chrome were using WebKit. In 2013 Google forked WebKit and called it Blink. Just like with JavaScript engines we rely on the companies responsible for these browsers to implement their rendering engines to a specification. This is the easiest path to ensure that our applications look the same across multiple browsers.
 
-There is a comparison fo the differnt layout engines on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Document_Object_Model)). It's pretty boring, but it does describe the supported features for each version of the DOM in each layout engine.
+There is a comparison of the different layout engines on [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_layout_engines_(Document_Object_Model)). It's pretty boring, but it does describe the supported features for each version of the DOM in each layout engine.
 
 ## The DOM (Document Object Model)
 
@@ -102,7 +102,7 @@ document.querySelector('div.fields')
 document.querySelectorAll('div');
 ```
 
-Now that we are able to select elements in the DOM tree, the real manipulation comes when we can dynamically create new nodes and move them around. The document object provides methdos to do this.
+Now that we are able to select elements in the DOM tree, the real manipulation comes when we can dynamically create new nodes and move them around. The document object provides methods to do this.
 
 ```javascript
 var element = document.getElementById('container');
